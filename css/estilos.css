@@ -51,7 +51,9 @@ a:hover {
 }
 
 button,
-input {
+input,
+textarea,
+select {
     font: inherit;
 }
 
@@ -137,7 +139,9 @@ a {
     font-weight: 700;
 }
 
-.form-group input {
+.form-group input,
+.form-group textarea,
+.form-group select {
     display: block;
     width: 100%;
     min-height: 2.25rem;
@@ -148,12 +152,15 @@ a {
     color: var(--text);
 }
 
-.form-group input::placeholder {
+.form-group input::placeholder,
+.form-group textarea::placeholder {
     color: #8491a5;
     opacity: 1;
 }
 
-.form-group input:focus {
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
     border-color: var(--brand);
     outline: none;
 }
